@@ -1,5 +1,5 @@
 /*
-Copyright 2021 melonbred
+Copyright 2020 melonbred
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -24,6 +24,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID 0x6d62
 #define DEVICE_VER 0x0001
 #define MANUFACTURER melonbred
+#define PRODUCT MB-44
+#define VIAL_KEYBOARD_UID {0x3E, 0x1D, 0x08, 0x5F, 0xCC, 0x02, 0xB6, 0x53}
+#define VIAL_UNLOCK_COMBO_ROWS { 0, 1 }
+#define VIAL_UNLOCK_COMBO_COLS { 0, 11 }
 
 
 /* key matrix size */
@@ -48,8 +52,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 /*Encoder Definition*/
-#define ENCODERS_PAD_A { D3 }
-#define ENCODERS_PAD_B { D2 }
+#define ENCODERS_PAD_A { D2 }
+#define ENCODERS_PAD_B { D3 }
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
