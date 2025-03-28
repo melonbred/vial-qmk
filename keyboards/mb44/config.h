@@ -1,5 +1,5 @@
 /*
-Copyright 2020 melonbred
+Copyright 2021 melonbred
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -19,17 +19,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID 0x6d62
-#define PRODUCT_ID 0x6d62
-#define DEVICE_VER 0x0001
-#define MANUFACTURER melonbred
-#define PRODUCT MB-44
-#define VIAL_KEYBOARD_UID {0x3E, 0x1D, 0x08, 0x5F, 0xCC, 0x02, 0xB6, 0x53}
-#define VIAL_UNLOCK_COMBO_ROWS { 0, 1 }
-#define VIAL_UNLOCK_COMBO_COLS { 0, 11 }
-
-
 /* key matrix size */
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 12
@@ -46,20 +35,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #define MATRIX_ROW_PINS { D1, D6, D5, D4 }
 #define MATRIX_COL_PINS { C4, C5, C6, C7, B7, B6, B5, B4, B3, B2, B1, B0 }
-#define UNUSED_PINS { C2 }
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
 
 /*Encoder Definition*/
-#define ENCODERS_PAD_A { D2 }
-#define ENCODERS_PAD_B { D3 }
+#define ENCODERS_PAD_A { D3 }
+#define ENCODERS_PAD_B { D2 }
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
-
-
-/* disable these deprecated features by default */
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
-
