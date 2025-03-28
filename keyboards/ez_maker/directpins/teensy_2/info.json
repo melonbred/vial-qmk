@@ -7,7 +7,7 @@
     "debounce": 5,
     "diode_direction": "COL2ROW",
     "features": {
-        "bootmagic": true,
+        "bootmagic_lite": true,
         "extrakey": true,
         "mousekey": true
     },
@@ -28,7 +28,7 @@
         ]
     },
     "usb": {
-        "device_version": "0.0.1",
+        "device_ver": "0x0001",
         "pid": "0x2322",
         "vid": "0xFEED"
     },

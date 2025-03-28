@@ -1,7 +1,7 @@
 {
     "keyboard_name": "numeros",
     "url": "www.clawboards.xyz",
-    "maintainer": "AlisGraveNil",
+    "maintainer": "AAClawson (AlisGraveNil)",
     "layouts": {
         "LAYOUT_numpad_5x4": {
             "layout": [
@@ -29,4 +29,5 @@
             ]
         }
     }
+    ,"meta": "https://noroadsleft.github.io/kbf_qmk_converter/"
 }

@@ -24,6 +24,20 @@ enum layer_names {
 
 };
 
+// Tap Dance Declarations
+enum {
+    TD_M_D = 0,
+    TD_P_M
+};
+
+// Tap Dance Definition
+// qk_tap_dance_action_t tap_dance_actions[] = {
+//   //Tap once for minus, tap twice for divide
+//   [TD_M_D] = ACTION_TAP_DANCE_DOUBLE(KC_PMNS, KC_PSLS),
+//   //Tap once for plus, tap twice for multiply
+//   [TD_P_M] = ACTION_TAP_DANCE_DOUBLE(KC_PPLS, KC_PAST)
+// };
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_default(

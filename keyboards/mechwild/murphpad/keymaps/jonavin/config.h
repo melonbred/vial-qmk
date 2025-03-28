@@ -21,6 +21,3 @@
 
 // Increase layers to 6 for VIA
 #define DYNAMIC_KEYMAP_LAYER_COUNT 6
-
-// Remove line below for vertical layout
-#define LANDSCAPE_MODE

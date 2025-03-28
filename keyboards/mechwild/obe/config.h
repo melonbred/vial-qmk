@@ -30,6 +30,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 7
 #define MATRIX_COLS 10
 
+#define EEPROM_I2C_24LC64
+
 /*
  * Keyboard Matrix Assignments
  *
@@ -60,7 +62,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LED_CAPS_LOCK_PIN B9
 
 /* RGB settings, uncomment this define to enable RGB */
-#define RGB_DI_PIN A0
+//#define RGB_DI_PIN A0
 #ifdef RGB_DI_PIN
 #    define RGBLED_NUM 10
 #    define RGBLIGHT_HUE_STEP 8
@@ -137,6 +139,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
+
+/* disable these deprecated features by default */
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
 
 /* Bootmagic Lite key configuration */
 #define BOOTMAGIC_LITE_ROW 5

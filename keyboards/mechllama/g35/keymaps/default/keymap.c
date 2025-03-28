@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_ADJUST] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐
-       RGB_TOG,TO(_BASE),XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  QK_BOOT,
+       RGB_TOG,TO(_BASE),XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  RESET,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        RGB_M_K, XXXXXXX, RGB_RMOD,RGB_HUI, RGB_MOD, XXXXXXX, XXXXXXX,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
@@ -66,8 +66,7 @@ const char* get_layer_name(uint8_t layer) {
     }
 }
 
-bool oled_task_user(void) {
+void oled_task_user(void) {
     oled_write_ln_P(get_layer_name(biton32(layer_state)), false);
-    return false;
 }
 #endif

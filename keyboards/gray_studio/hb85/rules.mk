@@ -4,9 +4,7 @@ MCU = atmega32a
 # Bootloader selection
 BOOTLOADER = bootloadhid
 
-# Build Options
-#   change yes to no to disable
-#
+# build options
 BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = no
 EXTRAKEY_ENABLE = yes

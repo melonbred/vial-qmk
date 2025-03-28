@@ -3,7 +3,6 @@
 *.swp
 *~
 .DS_Store
-._*
 
 # Build artifacts
 .clang_complete
@@ -19,6 +18,7 @@
 
 # QMK-specific
 api_data/v1
+doxygen/
 quantum/version.h
 *.bin
 *.eep
@@ -68,12 +68,10 @@ CMakeLists.txt
 .vscode/temp.sql
 tags
 
-# Ignore image/font files
+# Ignore image files
 *.gif
 *.jpg
 *.png
-*.ttf
-*.otf
 
 # Things Travis sees
 /.vs
@@ -89,11 +87,3 @@ __pycache__
 
 # Allow to exist but don't include it in the repo
 user_song_list.h
-
-# clangd
-compile_commands.json
-.clangd/
-.cache/
-
-# VIA(L) json files that don't belong in QMK repo
-via*.json

@@ -9,7 +9,7 @@
     "audio": false,
     "backlight": false,
     "bluetooth": false,
-    "bootmagic": true,
+    "bootmagic_lite": true,
     "command": false,
     "console": false,
     "extrakey": true,
@@ -37,7 +37,7 @@
   },
   "url": "https://caps-unlocked.com/cu80-round-2/",
   "usb": {
-    "device_version": "0.0.1",
+    "device_ver": "0x0001",
     "pid": "0x0081",
     "vid": "0x4355"
   },

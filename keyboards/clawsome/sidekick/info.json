@@ -1,7 +1,7 @@
 {
     "keyboard_name": "Sidekick",
     "url": "",
-    "maintainer": "AlisGraveNil",
+    "maintainer": "qmk",
     "layouts": {
         "LAYOUT": {
             "layout": [
